@@ -8,7 +8,7 @@ function init() {
   const inputTxt = document.getElementById('text-to-speak');
   const talk = document.querySelector('button');
 
-  const imgHappy = document.querySelector('#explore img'); 
+  const faceExpression = document.querySelector('#explore img'); 
 
   let voices = [];
 
@@ -46,10 +46,10 @@ function init() {
     var talkingFace = "assets/images/smiling-open.png";
     var silentFace = "assets/images/smiling.png";
     utterThis.onstart = function() {
-      imgHappy.src = talkingFace;
+      faceExpression.src = talkingFace;
     }
     utterThis.onend = function() {
-      imgHappy.src = silentFace;
+      faceExpression.src = silentFace;
     }
   });
 }
